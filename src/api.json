@@ -1,0 +1,197 @@
+{
+    "status": 200,
+    "message": "Data received successfully",
+    "title": "Some important commands",
+    "data": [
+      {
+        "heading": "",
+        "type": "list",
+        "data": [
+            {
+                "title": "",
+                "text": "php artisan passport:client --personal"
+            },
+            {
+                "title": "",
+                "text": "php artisan passport:client --client"
+            },
+            {
+                "title": "Create Controller",
+                "text": "php artisan make:controller myController"
+            },
+            {
+                "title": "Create apiResource Controller",
+                "text": "php artisan make:controller PhotoController --api"
+            }
+        ],
+        "paragraphs": []
+      },
+      {
+        "heading": "For Fake Data Seeder Commands",
+        "type": "list",
+        "data": [
+            {
+                "title": "",
+                "text": "php artisan optimize:clear"
+            },
+            {
+                "title": "",
+                "text": "php artisan migrate:fresh"
+            },
+            {
+                "title": "",
+                "text": "php artisan db:seed --class=DatabaseSeeder"
+            },
+            {
+                "title": "",
+                "text": "php artisan db:seed --class=FakeDataSeeder"
+            }
+        ],
+        "paragraphs": []
+      },
+      {
+        "heading": "Api Resource controller",
+        "type": "table",
+        "data": [
+            {
+                "verb": "GET",
+                "path": "/users",
+                "action": "index",
+                "routeName": "users.index"
+            },
+            {
+                "verb": "POST",
+                "path": "/users",
+                "action": "store",
+                "routeName": "users.store"
+            },
+            {
+                "verb": "GET",
+                "path": "/users/{user}",
+                "action": "show",
+                "routeName": "users.show"
+            },
+            {
+                "verb": "PUT | PATCH",
+                "path": "/users/{user}",
+                "action": "update",
+                "routeName": "users.update"
+            },
+            {
+                "verb": "DELETE",
+                "path": "/users/{user}",
+                "action": "destroy",
+                "routeName": "users.destroy"
+            }
+        ],
+        "paragraphs": [
+            {
+                "title": "",
+                "text": "Route::apiResource('users', 'UsersController');"
+            }
+        ]
+      },
+      {
+        "heading": "How to use PINT for laravel code formatting",
+        "type": "list",
+        "data": [
+            {
+                "title": "",
+                "text": "Install PINT: composer require laravel/pint --dev"
+            },
+            {
+                "title": "",
+                "text": "Test code formatting using PINT: ./vendor/bin/pint --test"
+            },
+            {
+                "title": "",
+                "text": "Adjust code formatting: ./vendor/bin/pint"
+            }
+        ],
+        "paragraphs": []
+      },
+      {
+        "heading": "Team members have already tried to clear cache before running testcases",
+        "type": "list",
+        "data": [
+            {
+                "title": "",
+                "text": "php artisan config:clear"
+            },
+            {
+                "title": "",
+                "text": "php artisan route:clear"
+            },
+            {
+                "title": "",
+                "text": "php artisan view:clear"
+            },
+            {
+                "title": "",
+                "text": "composer dump-autoload"
+            }
+        ],
+        "paragraphs": []
+      },
+      {
+        "heading": "Create build and run docker container",
+        "type": "list",
+        "data": [
+            {
+                "title": "",
+                "text": "sudo chmod 777 -R mysql-volume/"
+            }, 
+            {
+                "title": "",
+                "text": "sudo chmod 777 -R redis-volume/"
+            }, 
+            {
+                "title": "",
+                "text": "sudo systemctl stop redis"
+            }, 
+            {
+                "title": "",
+                "text": "docker-compose -f docker-compose.yml -f docker-compose.local.yml build"
+            }, 
+            {
+                "title": "",
+                "text": "docker-compose -f docker-compose.yml -f docker-compose.local.yml up"
+            }
+        ],
+        "paragraphs": []
+      },
+      {
+        "heading": "Enter in docker container",
+        "type": "list",
+        "data": [
+            {
+                "title": "",
+                "text": "docker exec -it earnie-app bash"
+            }
+        ],
+        "paragraphs": []
+      },
+      {
+        "heading": "Update Node Version",
+        "type": "",
+        "data": [],
+        "paragraphs": [
+            {
+                "title": "Install npm",
+                "text": "sudo apt-get install npm"
+            },
+            {
+                "title": "Install n",
+                "text": "sudo npm install n -g"
+            },
+            {
+                "title": "Latest version of node",
+                "text": "sudo n latest"
+            }
+        ]
+      }
+    ],
+    "font_color": "#000000",
+    "background_color": "#ffffff"
+  }
+  
